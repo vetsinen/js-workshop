@@ -8,7 +8,8 @@ console.log(c)
 
 const s1 = "A-"
 const s2 = "Level"
-const title = s1+s2
+const s3 = " courses"
+const title = s1+s2+s3
 console.log(title)
 
 

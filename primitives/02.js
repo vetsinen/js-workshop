@@ -1,9 +1,10 @@
 let i = 1
-let j
-j = 1
-//let j=1
-
+// let j
+// j = 1
+let j=1
+console.log(j)
 j = 4
+console.log(j)
 
 const A = 1
 // const A

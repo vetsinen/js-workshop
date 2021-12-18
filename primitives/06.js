@@ -1,5 +1,5 @@
-const bannedId = 37
-const userId = 36
+let bannedId = 36
+let userId = 36
 
 if (userId===bannedId){
     console.log('sorry, you cant participate')
@@ -10,7 +10,10 @@ if (answer==="Yes") {
     console.log('go ahead')
 }
 
-answer = "yes"
-if (answer==="Yes"){ //?
+// YES Yes yes yEs
+// YES
+// yes YES
+answer = "Yes"
+if (answer.toLowerCase()=="yes"){ //?
     console.log('and continue')
 }
