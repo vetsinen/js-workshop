@@ -1,9 +1,9 @@
 function hello(){
     console.log('hello')
+    console.log('my')
+    console.log('friend')
 }
 
-hello()
-hello()
 hello()
 
 function hello2(name){
@@ -12,6 +12,8 @@ function hello2(name){
 
 hello2('John')
 hello2()
+
+hello()
 
 function add(a,b){
     console.log(a+b)

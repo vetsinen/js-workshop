@@ -2,8 +2,7 @@ function fact1(n) {
     if (n < 2) {return 1}
     return n * fact1(n - 1)
 }
-
-console.log(fact1(5))
+console.log(fact1(4))
 
 function fact2(n) {
     let rez = 1
@@ -12,5 +11,4 @@ function fact2(n) {
     }
     return rez
 }
-
-console.log(fact2(5))
+console.log(fact2(4))

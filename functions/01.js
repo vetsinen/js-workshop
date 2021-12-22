@@ -9,12 +9,14 @@ function add2(a,b){
 }
 
 console.log(add2(3,7))
+let v = add2(3,7)
 
 function mult(a,b){
     return a*b
 }
 
-let c = mult(add2(1,3), add2(4,8))
+let c = mult( add2(1,3), add2(4,8))
+// console.log(c)
 
 function randomInRange(n){
     return Math.round(Math.random()*n)
