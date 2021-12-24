@@ -40,3 +40,13 @@
  //     for (let j = 1; j < 11; j++) {
  //         console.log(`${i} * ${j} = ${i * j}`)
  //     }
+
+ // for (let i=1;i<7;i++){
+ //     let s='';
+ //     for (let j=1;j<=i;j++) {
+ //         s += j + ' ';
+ //     }
+ //     console.log(s);
+ // }
+
+
