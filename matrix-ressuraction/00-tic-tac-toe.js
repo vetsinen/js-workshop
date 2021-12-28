@@ -6,4 +6,4 @@ for (row of matrix)
     for (el of row)
         console.log(el)
 
-console.log('elem', matrix[1][0])
+console.log('elem', matrix[0][0])

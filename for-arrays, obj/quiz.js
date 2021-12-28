@@ -1,6 +1,6 @@
  let arr = [1,7,2,8,9, 4, 3]
 
- // for (let i=0;i<10;i++){
+//  for (let i=0;i<10;i++){
 //     console.log(i)
 // }
 //
@@ -36,17 +36,16 @@
 //     i++
 // }
 
- // for (let i = 1; i < 11; i++)
- //     for (let j = 1; j < 11; j++) {
+ // for (let i = 1; i < 4; i++)
+ //     for (let j = 1; j < 4; j++)
  //         console.log(`${i} * ${j} = ${i * j}`)
- //     }
 
- // for (let i=1;i<7;i++){
- //     let s='';
- //     for (let j=1;j<=i;j++) {
- //         s += j + ' ';
- //     }
- //     console.log(s);
- // }
+ for (let i=1;i<7;i++){
+     let s='';
+     for (let j=1;j<=i;j++) {
+         s += j + ' ';
+     }
+     console.log(s);
+ }
 
 
