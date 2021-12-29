@@ -49,4 +49,20 @@ let arr2 = [2, 8, 3]
 // }
 // console.log(matrix)
 
-
+// function func2(arr) {
+//     let flag = true
+//     while (flag) {
+//         flag = false
+//         for (let i = 1; i < arr.length; i++)
+//             if (arr[i] < arr[i - 1]) {
+//                 flag = true
+//                 let temp = arr[i - 1]
+//                 arr[i - 1] = arr[i]
+//                 arr[i] = temp
+//             }
+//     }
+//     return arr
+// }
+//
+// let arr = [5, 4, 8, 2]
+// console.log(func2(arr))
