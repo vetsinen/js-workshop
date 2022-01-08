@@ -14,7 +14,7 @@ let s1 = "shevchenko"
 s1 = "franko"
 
 const A1 = "shevchenko"
-// A1 = "franko"
+ // A1 = "franko"
 
 console.log(i)
 console.log(A)

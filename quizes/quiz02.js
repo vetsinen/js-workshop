@@ -1,6 +1,8 @@
-let arr1 = [1, 7, 9]
-let arr2 = [2, 8, 3]
+let arr1 = [7, 3, 2]
+let arr2 = [1, 7, 9]
 
+// console.log(2===2)
+// // console.log(arr1===arr2)
 // /**
 //  *
 //  * @param arr1 {array}
@@ -16,11 +18,12 @@ let arr2 = [2, 8, 3]
 //     return true
 // }
 //
-// console.log(func1(arr1, arr2))
+// console.log(func1(arr1, "dfsdf"))
 
 // if (arr1.length===arr2.length){
 //     let l = arr1.length-1
 //     for (let i=0; i<arr1.length; i++){
+//
 //         tmp = arr1[i]
 //         arr1[i] = arr2[l-i]
 //         arr2[l-i] = tmp
@@ -56,6 +59,7 @@ let arr2 = [2, 8, 3]
 //         for (let i = 1; i < arr.length; i++)
 //             if (arr[i] < arr[i - 1]) {
 //                 flag = true
+//
 //                 let temp = arr[i - 1]
 //                 arr[i - 1] = arr[i]
 //                 arr[i] = temp
@@ -63,6 +67,7 @@ let arr2 = [2, 8, 3]
 //     }
 //     return arr
 // }
-//
-// let arr = [5, 4, 8, 2]
-// console.log(func2(arr))
+
+let arr = [5, 4, 1, 14, 52, 8, 2]
+console.log((arr))
+console.log(func2(arr))
