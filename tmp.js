@@ -1,7 +1,5 @@
-class Year {
-    constructor(year) {
-        this.year = year
-    }
-}
+let currentGuest
 
-const year = new Year(2022)
+let a, b
+
+

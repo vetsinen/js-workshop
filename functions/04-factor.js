@@ -12,3 +12,5 @@ function fact2(n) {
     return rez
 }
 console.log(fact2(4))
+
+module.exports = fact2
