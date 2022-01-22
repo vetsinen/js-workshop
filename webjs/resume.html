@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+</head>
+<body>
+<h1> my resume </h1>
+<h3>my skills</h3>
+
+<ul id="">
+
+</ul>
+
+<ul id="skills" style="font-size: 18px">
+    <li id="python">python</li>
+    <li>django</li>
+    <li>sql</li>
+</ul>
+<a href="ivan@gmail.com"></a>
+
+<input id="main" type="button" value="click me">
+
+<script>
+    const ul = document.getElementsByTagName('ul')[1]
+    ul.style.backgroundColor = 'green'
+
+    const skills = document.getElementById('skills')
+
+    document.getElementById('main').onclick = function (){
+        ul.style.backgroundColor = 'blue'
+    }
+
+
+</script>
+</body>
+</html>
