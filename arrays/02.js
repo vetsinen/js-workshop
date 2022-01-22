@@ -15,5 +15,5 @@ console.log(winner)
 console.log(usersId[winner])
 console.log(users[winner])
 
-console.log("\n")
-console.log(users[10])
+// console.log("\n")
+// console.log(users[10])

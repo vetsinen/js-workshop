@@ -4,3 +4,4 @@ const field = "fee"
 
 console.log(swarmLearning.field)//why this?
 console.log(swarmLearning[field])//why this?
+

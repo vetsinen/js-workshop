@@ -3,9 +3,9 @@ function makeTable(start, finish, step, func){
         console.log(x, '=>',func(x))
 }
 
-makeTable(0, Math.PI/4, 0.1, Math.cos) //!!!without (x)
+makeTable(0, Math.PI/4, 0.1, Math.sin) //!!!without (x)
 
-// makeTable(0, Math.PI/4, 0.1, function (arg){return Math.sin(arg)*Math.cos(arg)})
+makeTable(0, Math.PI/4, 0.1, function (arg){return Math.sin(arg)*Math.cos(arg)})
 
 function getMetriks(func, x){
     const start= new Date().getTime()

@@ -1,5 +1,5 @@
-const organizer = {"name": "EPAM", "":"#", ":":"..."}
+const organizer = {"na  me": "EPAM", "":"#", ":":"..."}
 
-console.log(organizer.name)
-// console.log(organizer.)
+console.log(organizer)
+console.log(organizer)
 // console.log(organizer.:)

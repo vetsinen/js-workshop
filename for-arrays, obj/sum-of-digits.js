@@ -12,6 +12,4 @@ for (let i=0;i<s.length;i++){
 }
 console.log(sum)
 
-12321
-abcba
 

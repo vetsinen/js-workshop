@@ -8,10 +8,12 @@ const track2 = new TrackFunc("Single Ladies")
 console.log(typeof track2, track2.name)
 
 class TrackClass{//CAPS
-    name
+    duration
+    genre
+
     constructor(name) {
         this.name = name
     }
 }
 const track3 = new TrackClass("Single Ladies")
-console.log(typeof track3, track3.name)
+console.log(typeof track3, track3)

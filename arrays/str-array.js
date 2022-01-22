@@ -1,6 +1,5 @@
 let lang = 'pascal'
-lang[0]='t'
-console.log(lang)
+console.log(lang[2])
 
 //https://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
 // In JavaScript, strings are immutable, which means the best you can do is to create a new string with the changed content and assign the variable to point to it.
