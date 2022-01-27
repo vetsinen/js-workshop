@@ -10,13 +10,14 @@ function addLiItem(item){
 async function getData(){
     console.log('in get data')
     let response = await axios(localUrl)
+    console.log()
         for (let district of response) {
             console.log(district)
             addLiItem(district)
         }
 }
 
-let rez = getData()
+getData()
 console.log('data sended')
-console.log(rez, typeof rez)
-//for (let i=0;i<200000000n;i++){}
+//console.log(rez, typeof rez)
+//for (let i=0;i<2000000000n;i++){}
