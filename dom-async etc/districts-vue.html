@@ -9,7 +9,7 @@
     {{ message }}
     <ul>
         <li v-for="district in districts">
-            {{ district }}
+            {{ district.adress }}
         </li>
     </ul>
 </div>
@@ -25,7 +25,7 @@
             districts: []
         },
         mounted: async function () {
-            let rez = await axios('https://vetsinen.pythonanywhere.com/districts')
+            let rez = await axios('http://10.10.150.75:5000/rooms')
             this.districts = rez
         }
     })
