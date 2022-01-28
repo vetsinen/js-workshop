@@ -8,8 +8,8 @@
 <div id="app">
     {{ message }}
     <ul>
-        <li v-for="district in districts">
-            {{ district.adress }}
+        <li v-for="room in rooms">
+            {{ room.adress }}
         </li>
     </ul>
 </div>
@@ -22,11 +22,10 @@
         el: '#app',
         data: {
             message: 'Hello Vue!',
-            districts: []
+            rooms: []
         },
         mounted: async function () {
-            let rez = await axios('http://10.10.150.75:5000/rooms')
-            this.districts = rez
+            this.rooms = await axios('https://vetsinen.pythonanywhere.com/rooms')
         }
     })
 </script>

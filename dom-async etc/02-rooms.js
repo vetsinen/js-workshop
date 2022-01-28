@@ -1,5 +1,3 @@
-const localUrl = 'http://10.10.150.75:5000/rooms/'
-const webUrl = 'https://vetsinen.pythonanywhere.com/rooms/'
 const rooms = document.getElementById("rooms")
 const district = document.getElementById('district')
 
@@ -9,19 +7,45 @@ function addLiItem(item){
     rooms.appendChild(li);
 }
 
-async function getData(district='Оболонь'){
+async function getRestData(district='Оболонь'){
+    const localUrl = 'http://192.168.0.5:5000/rooms/'
+    const webUrl = 'https://vetsinen.pythonanywhere.com/rooms/'
+
     let response = await fetch(localUrl+district)
     if (response.ok) {
-        let rez = await response.json()
-        rooms.textContent = '' //clearing list
-        for (let room of rez) {
-            console.log(room)
-            addLiItem(room)
-        }
+        return await response.json()
     }
 }
 
-getData()
-document.getElementById('district').onchange = ()=> {
-    getData(district.value)
+async function getGraphQLData(){
+    const query = `query RoomQuery {
+      rooms {
+        adress, price
+      }
+    }`
+
+    const resp = await fetch('http://localhost:4000/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+            query,
+        })
+    })
+    const rez = await resp.json()
+    return (rez.data.rooms)
+}
+
+
+document.getElementById('district').onchange = async ()=> {
+    let dbrooms = await getRestData(district.value)
+
+    rooms.textContent = ''
+    for (let room of dbrooms) {
+        console.log(room)
+        addLiItem(room)
+    }
+
 }

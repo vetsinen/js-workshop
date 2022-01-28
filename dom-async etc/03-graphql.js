@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 async function getData() {
     const query = `query RoomQuery {
       rooms {
-        title, price
+        adress, price
       }
     }`;
 
