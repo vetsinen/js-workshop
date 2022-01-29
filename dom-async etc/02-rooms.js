@@ -2,16 +2,20 @@ const rooms = document.getElementById("rooms")
 const district = document.getElementById('district')
 
 function addLiItem(item){
-    let li = document.createElement("li");
-    li.appendChild(document.createTextNode(item.adress+' - '+item.price));
-    rooms.appendChild(li);
+    let adrdress = document.createElement("span")
+    adrdress.appendChild(document.createTextNode(item.adress+'-'))
+    rooms.appendChild(adrdress)
+    let price = document.createElement("span")
+    price.appendChild(document.createTextNode(item.price))
+    rooms.appendChild(price)
+    rooms.appendChild(document.createElement("br"))
 }
 
 async function getRestData(district='Оболонь'){
     const localUrl = 'http://192.168.0.5:5000/rooms/'
     const webUrl = 'https://vetsinen.pythonanywhere.com/rooms/'
 
-    let response = await fetch(localUrl+district)
+    let response = await fetch(webUrl+district)
     if (response.ok) {
         return await response.json()
     }
