@@ -1,4 +1,4 @@
-const localUrl = 'http://127.0.0.1:5000/districts'
+const localUrl = 'https://vetsinen.pythonanywhere.com/districts'
 const districts = document.getElementById("districts")
 
 function addLiItem(item){
